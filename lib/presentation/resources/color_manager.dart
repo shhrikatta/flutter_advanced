@@ -22,6 +22,6 @@ extension HexToColor on Color {
       hexColorString = "FF$hexColorString";
     }
 
-    return Color(int.parse(hexColorString));
+    return Color(int.parse(hexColorString, radix: 16));
   }
 }
